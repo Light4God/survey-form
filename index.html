@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey signup</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to right bottom, #c31432, #240b36);
+    }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>survey signup</title>
-</head>
-<style>
-  body {
-    background: linear-gradient(to right bottom, #c31432, #240b36);
-  }
+    .suv-contain {
+      width: 56%;
+      border: 2px solid black;
+      margin: auto;
+      background-color: whitesmoke;
+      line-height: 40px;
+      padding: 3% 3% 3% 3%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #240b36;
+      margin-bottom: 40px;
+    }
 
-  .suv-contain {
-    width: 56%;
-    border: 2px solid black;
-    margin: auto;
-    background-color: whitesmoke;
-    line-height: 40px;
-    padding: 3% 3% 3% 3%;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #240b36;
-    
-  }
+    .website {
+      text-align: center;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+    }
 
-  .website {
-    text-align: center;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-  }
+    .description {
+      text-align: center;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+    }
 
-  .description {
-    text-align: center;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-  }
+    label {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bolder;
+    }
 
-  label {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bolder;
-  }
+    select {
+      width: 100%;
+      height: 45px;
+      border-radius: 20px;
+      padding-left: 15px;
+      font-size: 18px;
+      border-color: grey;
+      color: gray;
+    }
 
-  select {
-    width: 100%;
-    height: 45px;
-    border-radius: 20px;
-    padding-left: 15px;
-    font-size: 18px;
-    border-color: grey;
-    color: gray;
-  }
+    input {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+    }
 
-  input {
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    
-  }
+    button {
+      border-radius: 50px;
+      padding: 1.5% 6%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      border-image: initial;
+      font-family: "Open Sans", sans-serif;
+    }
+    textarea {
+      margin-bottom: 10px;
+      height: 150px;
+      border-radius: 8px;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      font-family: "Open Sans", sans-serif;
+     
+    }
+    footer {
+      color: white;
+     text-align: center;
+     font-family: 'Open Sans', sans-serif;
+     font-size: small;
+     margin-bottom: 40px;
+    }
+  </style>
 
-  button {
-    border-radius: 50px;
-    padding: 1.5% 6%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: gray;
-    border-image: initial;
-    font-family: "Open Sans", sans-serif;
-  }
-  textarea {
-    margin-bottom: 10px;
-    height: 150px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
-    margin-bottom: 5px;
-  }
-</style>
-
-<body>
-  <form method="post" action="server">
-    <h1 class="website">Website Survey Form</h1>
-    <p class="description">
-      Kindly fill out the form to help us improve our website
-    </p>
-    <div class="suv-contain">
-      <label>Your Name</label><br />
-      <input style="
+  <body>
+    <form method="post" action="server">
+      <h1 class="website">Website Survey Form</h1>
+      <p class="description">
+        Kindly fill out the form to help us improve our website
+      </p>
+      <div class="suv-contain">
+        <label>Your Name</label><br />
+        <input
+          style="
             width: 45%;
             height: 45px;
             border-radius: 50px;
@@ -95,67 +101,102 @@
             border-color: grey;
             border-width: 1px;
             margin-right: 3.5%;
-          " type="text" placeholder="First Name" />
-      <input style="
+          "
+          type="text"
+          placeholder="First Name"
+        />
+        <input
+          style="
             width: 45%;
             height: 45px;
-           border-radius: 50px;
+            border-radius: 50px;
             padding-left: 15px;
             border-color: grey;
             border-width: 1px;
-          " type="text" placeholder="Last Name" /><br />
-      <label>Your Email</label><br />
-      <input style="
+          "
+          type="text"
+          placeholder="Last Name"
+        /><br />
+        <label>Your Email</label><br />
+        <input
+          style="
             width: 97%;
             height: 45px;
             border-radius: 50px;
             padding-left: 15px;
             border-color: grey;
             border-width: 1px;
-          " type="email" placeholder="light2023@gmail.com" /><br />
-      <label>Your Age</label><br />
-      <input style="width: 97%;
+          "
+          type="email"
+          placeholder="light2023@gmail.com"
+        /><br />
+        <label>Your Age</label><br />
+        <input
+          style="
+            width: 97%;
             height: 45px;
             border-radius: 50px;
             padding-left: 15px;
             border-color: grey;
-            border-width: 1px;" type="number" min="1" max="70" placeholder="Age" /><br />
-      <label>How did you hear about this website?</label><br />
-      <select id="dropdown">
-        <option>Select Option</option>
-        <option>Social Media</option>
-        <option>Advertisement</option>
-        <option>Search engine</option>
-        <option>My Friends</option>
-      </select><br />
-      <label>Which device do you normally use to access the website?</label><br />
-      <input type="checkbox" name="device" value="Desktop/Laptops" />Desktop/Laptops<br />
-      <input type="checkbox" name="device" value="Mobile Devices" />Mobile
-      Devices<br />
-      <input type="checkbox" name="device" value="Pad Devices" />Pad
-      Devices<br />
-      <label>What browser do you normally use to access the website?</label><br />
-      <input type="radio" name="device" value="Mozilla Firefox" />Mozilla
-      Firefox<br />
-      <input type="radio" name="device" value="Google Chrome" />Google
-      Chrome<br />
-      <input type="radio" name="device" value="Internet Explorer" />Internet
-      Explorer<br />
-      <input type="radio" name="device" value="Opera Mini" />Opera Mini<br />
-      <input type="radio" name="device" value="Safari" />Safari<br />
-      <input type="radio" name="device" value="Others" />Others<br />
-      <label>Are you satisfied with the website?</label><br />
-      <input type="radio" name="question" value="Very Satisfied" />Very
-      Satisfied<br />
-      <input type="radio" name="question" value="Satisfied" />Satisfied<br />
-      <input type="radio" name="question" value="Neutral" />Neutral<br />
-      <input type="radio" name="question" value="Unsatisfied" />Unsatisfied<br />
-      <input type="radio" name="question" value="Very Unsatisfied" />VeryUnsatisfied<br />
-      <label>Additional Comments</label><br />
-      <textarea placeholder="Other comments"></textarea>
-      <button type="submit">submit</button>
-    </div>
-  </form>
-</body>
-
+            border-width: 1px;
+          "
+          type="number"
+          min="1"
+          max="70"
+          placeholder="Age"
+        /><br />
+        <label>How did you hear about this website?</label><br />
+        <select id="dropdown">
+          <option>Select Option</option>
+          <option>Social Media</option>
+          <option>Advertisement</option>
+          <option>Search engine</option>
+          <option>My Friends</option></select
+        ><br />
+        <label>Which device do you normally use to access the website?</label
+        ><br />
+        <input
+          type="checkbox"
+          name="device"
+          value="Desktop/Laptops"
+        />Desktop/Laptops<br />
+        <input type="checkbox" name="device" value="Mobile Devices" />Mobile
+        Devices<br />
+        <input type="checkbox" name="device" value="Pad Devices" />Pad
+        Devices<br />
+        <label>What browser do you normally use to access the website?</label
+        ><br />
+        <input type="radio" name="device" value="Mozilla Firefox" />Mozilla
+        Firefox<br />
+        <input type="radio" name="device" value="Google Chrome" />Google
+        Chrome<br />
+        <input type="radio" name="device" value="Internet Explorer" />Internet
+        Explorer<br />
+        <input type="radio" name="device" value="Opera Mini" />Opera Mini<br />
+        <input type="radio" name="device" value="Safari" />Safari<br />
+        <input type="radio" name="device" value="Others" />Others<br />
+        <label>Are you satisfied with the website?</label><br />
+        <input type="radio" name="question" value="Very Satisfied" />Very
+        Satisfied<br />
+        <input type="radio" name="question" value="Satisfied" />Satisfied<br />
+        <input type="radio" name="question" value="Neutral" />Neutral<br />
+        <input
+          type="radio"
+          name="question"
+          value="Unsatisfied"
+        />Unsatisfied<br />
+        <input
+          type="radio"
+          name="question"
+          value="Very Unsatisfied"
+        />VeryUnsatisfied<br />
+        <label>Additional Comments</label><br />
+        <textarea placeholder="Other comments"></textarea>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+    <footer>
+      © 2023. Developed by Light | Dignity Technology
+    </footer>
+  </body>
 </html>
